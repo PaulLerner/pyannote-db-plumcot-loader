@@ -1,5 +1,6 @@
-:warning: Work in progress :warning:
-:warning: Should work with `pyannote.database` `custom` branch.
+:warning: Work in progress :warning:  
+
+Should work with `pyannote.database` `custom` branch
 
 # Custom pyannote.database data loaders
 
