@@ -30,17 +30,14 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="your_package",
+    name="plumcot_loader",
     packages=find_packages(),
-    install_requires=["pyannote.database",],
+    install_requires=["pyannote.database >= 4.0",],
     entry_points={
         "pyannote.database.loader": [
-            # load files with extension '.ext1'
-            # with your_package.loader.Ext1Loader
-            ".ext1 = your_package.loader:Ext1Loader",
-            # load files with extension '.ext2'
-            # with your_package.loader.Ext2Loader
-            ".ext2 = your_package.loader:Ext2Loader",
+            ".txt = plumcot_loader.loader:TxtLoader",
+            ".aligned = plumcot_loader.loader:AlignedLoader",
+            ".csv = plumcot_loader.loader:CsvLoader",
         ],
     },
 )
